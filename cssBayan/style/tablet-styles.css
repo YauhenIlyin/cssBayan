@@ -1,0 +1,94 @@
+.main {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-width: 321px;
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.memeContainer {
+    width: 100%;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.subtitleContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 26;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: blue;
+    width: 75%;
+    text-align: left;
+}
+
+.icon {
+    float: right;
+    width:25%;
+}
+
+.hideIcon {
+    display: none;
+    float: right;
+    width: 25px;
+    height: 25px;
+}
+
+.openIcon {
+    display: none;
+    float: right;
+    width: 25px;
+    height: 25px;
+}
+
+.line {
+    border-top: 1px solid grey;
+    height: 0px;
+    width: 100%;
+}
+
+.memeImage {
+    width: 45%;
+    opacity: 0%;
+    height: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main:hover .openIcon{
+    display: flex;
+}
+
+.memeContainer:hover .memeImage {
+    transition: opacity 2.5s ease-in-out;
+    height: auto;
+    opacity: 100%;
+    display: flex;
+}
+
+.memeContainer:hover .openIcon {
+    display: none;
+}
+
+.memeContainer:hover .hideIcon {
+    display: flex;
+}
+
+.main:hover .subtitle {
+    color: black;
+}
